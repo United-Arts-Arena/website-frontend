@@ -47,8 +47,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vw;
-  height: 100vh;
+  min-width: 100vw;
+  min-height: 100vh;
 }
 
 .logo-wrapper {
@@ -57,11 +57,16 @@ body {
 
 .logo {
   position: relative;
-  width: 500px;
-  height: 500px;
+  width: 25vw;
+  height: 25vw;
   z-index: 1;
 
   animation: push $animationTime linear infinite;
+
+  @include media-sm {
+    width: 50vw;
+    height: 50vw;
+  }
 }
 
 .logo__alt {
