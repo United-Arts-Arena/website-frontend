@@ -1,6 +1,8 @@
 // VARS
 $primary: #87c1e2;
 
+$backgroundColor: #1c1636;
+
 $fontsizeSmaller: 12px;
 $fontsizeSmall: 16px;
 $fontsizeBase: 22px;
@@ -12,6 +14,8 @@ $fontsizeBig--mobile: 22px;
 $base: 8px;
 
 $transition: .3s ease;
+
+$animationTime: 4s;
 
 // MIXINS
 @mixin media-sm {
@@ -30,4 +34,77 @@ $transition: .3s ease;
 html,
 body {
   min-height: 100vh;
+}
+
+
+// =============== STYLES ==============
+
+body {
+  background: linear-gradient($backgroundColor, #000);
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.logo-wrapper {
+  position: relative;
+}
+
+.logo {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  z-index: 1;
+
+  animation: push $animationTime linear infinite;
+}
+
+.logo__alt {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 0;
+  transform-origin: center;
+
+  --pulseScale: 1.4;
+
+  animation: pulse $animationTime linear infinite;
+}
+
+.logo__alt--2 {
+  animation-delay: .3s;
+  --pulseScale: 1.6;
+}
+
+@keyframes push {
+  4%, 100% {
+    transform: scale(1);
+  }
+  7% {
+    transform: scale(0.98);
+  }
+  11% {
+    transform: scale(1);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  12.5% {
+    opacity: 0.08;
+    transform: scale(calc(var(--pulseScale) * 0.7));
+  }
+  25% {
+    opacity: 0;
+    transform: scale(var(--pulseScale));
+  }
 }
