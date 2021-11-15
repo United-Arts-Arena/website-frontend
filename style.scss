@@ -61,7 +61,7 @@ body {
   height: 25vw;
   z-index: 1;
 
-  animation: push $animationTime linear infinite;
+  animation: push $animationTime ease-in infinite;
 
   @include media-sm {
     width: 50vw;
@@ -91,10 +91,10 @@ body {
   4%, 100% {
     transform: scale(1);
   }
-  7% {
+  9% {
     transform: scale(0.98);
   }
-  11% {
+  13% {
     transform: scale(1);
   }
 }
