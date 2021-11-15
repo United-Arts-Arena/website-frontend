@@ -1,0 +1,15 @@
+{
+  "name": "website-frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "styles": "node-sass style.scss style.css",
+    "styles:watch": "node-sass style.scss style.css -w"
+  },
+  "author": "KarstenBuckstegge",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^6.0.1"
+  }
+}

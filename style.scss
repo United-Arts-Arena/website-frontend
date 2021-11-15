@@ -1,0 +1,33 @@
+// VARS
+$primary: #87c1e2;
+
+$fontsizeSmaller: 12px;
+$fontsizeSmall: 16px;
+$fontsizeBase: 22px;
+$fontsizeBig: 26px;
+
+$fontsizeBase--mobile: 18px;
+$fontsizeBig--mobile: 22px;
+
+$base: 8px;
+
+$transition: .3s ease;
+
+// MIXINS
+@mixin media-sm {
+  @media (max-width: 900px) { @content; }
+}
+
+// RESETS
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100vh;
+}
