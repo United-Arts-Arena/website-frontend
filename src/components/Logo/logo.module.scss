@@ -1,0 +1,67 @@
+@import "../../styles/constants.scss";
+@import "../../styles/mixins.scss";
+
+.logoWrapper {
+  position: relative;
+}
+
+.logo {
+  position: relative;
+  width: 25vw;
+  height: 25vw;
+  z-index: 1;
+
+  animation: push $animationTime ease-in infinite;
+
+  @include media-sm {
+    width: 50vw;
+    height: 50vw;
+  }
+}
+
+.logoAlt {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 0;
+  transform-origin: center;
+
+  --pulseScale: 1.4;
+
+  animation: pulse $animationTime linear infinite;
+}
+
+.logoAlt2 {
+  animation-delay: 0.3s;
+  --pulseScale: 1.6;
+}
+
+@keyframes push {
+  4%,
+  100% {
+    transform: scale(1);
+  }
+  9% {
+    transform: scale(0.98);
+  }
+  13% {
+    transform: scale(1);
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  12.5% {
+    opacity: 0.15;
+    transform: scale(calc(var(--pulseScale) * 0.7));
+  }
+  25% {
+    opacity: 0;
+    transform: scale(var(--pulseScale));
+  }
+}

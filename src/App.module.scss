@@ -1,0 +1,11 @@
+@import "./styles/constants.scss";
+
+body {
+  background: #000;
+}
+
+.App {
+  text-align: center;
+  background: $backgroundGradient;
+  font-family: $fontFamily;
+}
