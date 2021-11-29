@@ -1,0 +1,32 @@
+@import "../../styles/constants.scss";
+
+.header {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: $headerHeight;
+  background: #000;
+}
+
+.content {
+  width: 100%;
+  max-width: $maxContentWidth;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+}
+
+.menuItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: $headerHeight;
+  padding: 0 $base * 2;
+  color: white;
+  text-decoration: none;
+}
