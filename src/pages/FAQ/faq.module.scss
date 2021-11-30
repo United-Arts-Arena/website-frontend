@@ -1,0 +1,16 @@
+@import "../../styles/constants.scss";
+@import "../../styles/mixins.scss";
+
+.faqWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.faq {
+  max-width: 1200px;
+
+  @include mediaSm {
+    padding: $base * 3 $base * 2;
+  }
+}

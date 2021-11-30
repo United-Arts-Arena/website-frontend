@@ -10,6 +10,11 @@ export const Header: React.FC = () => {
   const MenuEntries = (
     <>
       <li>
+        <Link className={styles.menuItem} to="faq">
+          FAQ
+        </Link>
+      </li>
+      <li>
         <Link className={styles.menuItem} to="artists">
           Artist Signup
         </Link>

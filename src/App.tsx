@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { PageFrame } from "./components/PageFrame/PageFrame";
 import { ArtistSignup } from "./pages/ArtistSignup/ArtistSignup";
 import { PartnerSignup } from "./pages/PartnerSignup/PartnerSignup";
+import { FAQ } from "./pages/FAQ/faq";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
             <Route path="impressum" element={<Impressum />} />
             <Route path="artists" element={<ArtistSignup />} />
             <Route path="partners" element={<PartnerSignup />} />
+            <Route path="faq" element={<FAQ />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </PageFrame>
