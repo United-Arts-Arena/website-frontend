@@ -4,6 +4,8 @@ import { NotFound } from "./pages/NotFound/NotFound";
 import { Impressum } from "./pages/Impressum/Impressum";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { PageFrame } from "./components/PageFrame/PageFrame";
+import { ArtistSignup } from "./pages/ArtistSignup/ArtistSignup";
+import { PartnerSignup } from "./pages/PartnerSignup/PartnerSignup";
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="impressum" element={<Impressum />} />
+            <Route path="artists" element={<ArtistSignup />} />
+            <Route path="partners" element={<PartnerSignup />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </PageFrame>
