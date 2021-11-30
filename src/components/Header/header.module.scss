@@ -1,4 +1,5 @@
 @import "../../styles/constants.scss";
+@import "../../styles/mixins.scss";
 
 .header {
   position: fixed;
@@ -16,9 +17,16 @@
   max-width: $maxContentWidth;
 }
 
-.menu {
+.menu,
+.menuMobile {
   display: flex;
   list-style: none;
+}
+
+.menu {
+  @include mediaSm {
+    display: none;
+  }
 }
 
 .menuItem {
@@ -29,4 +37,73 @@
   padding: 0 $base * 2;
   color: white;
   text-decoration: none;
+}
+
+.logoWrapper {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: $base * 4;
+  width: $headerHeight * 2;
+  height: $headerHeight * 2;
+  bottom: -$headerHeight;
+  background: black;
+  border-radius: 50%;
+}
+
+.logo {
+  width: 95%;
+  height: 95%;
+}
+
+// Mobile Menu
+.icon {
+  width: $headerHeight / 2;
+  height: $headerHeight / 2;
+}
+
+.mobileMenuOpen {
+  position: fixed;
+  display: none;
+  top: $headerHeight / 4;
+  left: $headerHeight / 4;
+
+  @include mediaSm {
+    display: block;
+  }
+}
+
+.menuCheckbox {
+  opacity: 1;
+  pointer-events: none;
+  height: 0;
+}
+
+.menuMobile {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+  z-index: 1000;
+  transform: translateX(-110%);
+
+  transition: transform $transition;
+
+  .menuCheckbox:checked ~ & {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: translateX(0);
+  }
+}
+
+.mobileMenuClose {
+  position: absolute;
+  top: $headerHeight / 4;
+  right: $headerHeight / 4;
 }

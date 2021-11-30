@@ -13,7 +13,7 @@
 
   animation: push $animationTime ease-in infinite;
 
-  @include media-sm {
+  @include mediaSm {
     width: 50vw;
     height: 50vw;
   }
