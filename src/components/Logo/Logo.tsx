@@ -6,11 +6,12 @@ import styles from "./logo.module.scss";
 import logo from "../../assets/logo.png";
 
 type Props = {
-  pulse: boolean;
+  pulse?: boolean;
+  className?: string;
 };
 
 export const Logo: React.FC<Props> = (props) => (
-  <span className={styles.logoWrapper}>
+  <span className={classnames(styles.logoWrapper, props.className)}>
     <img className={styles.logo} src={logo} alt="uaa logo" />
     <img
       className={classnames(styles.logo, styles.logoAlt, styles.logoAlt1)}

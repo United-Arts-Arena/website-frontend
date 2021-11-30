@@ -75,9 +75,10 @@
 }
 
 .menuCheckbox {
-  opacity: 1;
+  opacity: 0;
   pointer-events: none;
   height: 0;
+  position: fixed;
 }
 
 .menuMobile {
