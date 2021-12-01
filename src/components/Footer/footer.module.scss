@@ -8,9 +8,16 @@
   bottom: 0;
   left: 0;
   width: 100vw;
-  height: $base * 5;
+  height: $footerHeight;
   background: #000;
   border-top: 2px solid $backgroundColor;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: $maxContentWidth;
 }
 
 .item {

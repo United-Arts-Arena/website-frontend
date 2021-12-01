@@ -1,11 +1,17 @@
 @import "../../styles/constants.scss";
 
 .intro {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100vw;
   height: calc(100vh - $headerHeight * 2 - $footerHeight);
+}
+
+.claim {
+  position: absolute;
+  bottom: 10vh;
 }
 
 .logo {

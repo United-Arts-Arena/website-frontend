@@ -10,6 +10,7 @@
   right: 0;
   height: $headerHeight;
   background: #000;
+  z-index: 100;
 }
 
 .content {
@@ -68,6 +69,7 @@
   display: none;
   top: $headerHeight / 4;
   left: $headerHeight / 4;
+  z-index: 200;
 
   @include mediaSm {
     display: block;

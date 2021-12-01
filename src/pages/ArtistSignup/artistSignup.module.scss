@@ -8,6 +8,6 @@ $iframeTopMargin: $base * 2;
   background-color: #000;
   color: #fff;
   width: 90%;
-  max-width: 1200px;
+  max-width: $maxContentWidth;
   height: calc(100vh - $headerHeight * 2 - $iframeTopMargin - $base * 2);
 }

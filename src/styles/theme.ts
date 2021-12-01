@@ -3,9 +3,10 @@ import { createTheme } from "@mui/material";
 const baseTheme = createTheme({
   typography: {
     fontFamily: "franklin-gothic-condensed, sans-serif",
-    fontSize: 18,
+    fontSize: 16,
   },
 });
+
 export const theme = createTheme({
   ...baseTheme,
   palette: {
@@ -22,6 +23,20 @@ export const theme = createTheme({
     text: {
       primary: "#fff",
       secondary: "#ccc",
+    },
+  },
+  typography: {
+    h1: {
+      fontFamily: "outageregular, sans-serif",
+      fontSize: "3.75rem",
+    },
+    h2: {
+      fontFamily: "outageregular, sans-serif",
+      fontSize: "2.75rem",
+    },
+    h3: {
+      fontFamily: "outageregular, sans-serif",
+      fontSize: "2rem",
     },
   },
 });

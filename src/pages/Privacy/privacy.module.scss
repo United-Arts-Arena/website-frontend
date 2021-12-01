@@ -1,7 +1,7 @@
 @import "../../styles/constants.scss";
 
 .privacy {
-  max-width: 1200px;
+  max-width: $maxContentWidth;
   text-align: left;
   margin: $base * 3 auto;
 

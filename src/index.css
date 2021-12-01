@@ -21,3 +21,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+@font-face {
+  font-family: "outageregular";
+  src: url("/src/assets/font/outage.woff2") format("woff2"),
+    url("/src/assets/font/outage.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
