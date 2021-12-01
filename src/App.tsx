@@ -4,8 +4,7 @@ import { NotFound } from "./pages/NotFound/NotFound";
 import { Impressum } from "./pages/Impressum/Impressum";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { PageFrame } from "./components/PageFrame/PageFrame";
-import { ArtistSignup } from "./pages/ArtistSignup/ArtistSignup";
-import { PartnerSignup } from "./pages/PartnerSignup/PartnerSignup";
+import { NewsletterSignup } from "./pages/NewsletterSignup/NewsletterSignup";
 import { FAQ } from "./pages/FAQ/faq";
 import { Privacy } from "./pages/Privacy/privacy";
 
@@ -18,8 +17,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="impressum" element={<Impressum />} />
             <Route path="privacy" element={<Privacy />} />
-            <Route path="artists" element={<ArtistSignup />} />
-            <Route path="partners" element={<PartnerSignup />} />
+            <Route path="newsletter" element={<NewsletterSignup />} />
             <Route path="faq" element={<FAQ />} />
             <Route path="*" element={<NotFound />} />
           </Routes>

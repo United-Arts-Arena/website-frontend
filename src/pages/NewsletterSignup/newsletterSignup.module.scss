@@ -1,0 +1,19 @@
+@import "../../styles/constants.scss";
+
+$topMargin: $base * 2;
+
+body {
+  .headline {
+    margin-top: $topMargin;
+    margin-bottom: $base * 3;
+  }
+
+  .iframe {
+    border: none;
+    background-color: #000;
+    color: #fff;
+    width: 90%;
+    max-width: $maxContentWidth;
+    height: calc(100vh - $headerHeight * 2 - $topMargin - $base * 2);
+  }
+}

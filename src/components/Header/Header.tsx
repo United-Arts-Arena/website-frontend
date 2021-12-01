@@ -35,17 +35,8 @@ export const Header: React.FC = () => {
           setMenuOpen(false);
         }}
       >
-        <Link className={styles.menuItem} to="artists">
-          Artist Signup
-        </Link>
-      </li>
-      <li
-        onClick={() => {
-          setMenuOpen(false);
-        }}
-      >
-        <Link className={styles.menuItem} to="partners">
-          Partner Signup
+        <Link className={styles.menuItem} to="newsletter">
+          Newsletter Signup
         </Link>
       </li>
     </>

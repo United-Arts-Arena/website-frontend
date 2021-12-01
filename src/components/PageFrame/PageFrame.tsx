@@ -10,7 +10,7 @@ export const PageFrame: React.FC = (props) => (
   <ThemeProvider theme={theme}>
     <div className={styles.pageFrame}>
       <Header />
-      {props.children}
+      <div className={styles.content}>{props.children}</div>
       <Footer />
     </div>
   </ThemeProvider>
