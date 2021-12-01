@@ -1,7 +1,8 @@
-$primary: #87c1e2;
-
 $backgroundColor: #1c1636;
 $backgroundGradient: linear-gradient($backgroundColor, #000);
+
+$grey: #857f9b;
+
 $fontFamily: franklin-gothic-condensed, sans-serif;
 
 $fontsizeSmaller: 12px;
@@ -16,6 +17,7 @@ $base: 8px;
 
 $maxContentWidth: 1200px;
 $headerHeight: $base * 8;
+$footerHeight: $base * 8;
 
 $transition: 0.3s ease;
 
