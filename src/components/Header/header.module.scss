@@ -74,13 +74,6 @@
   }
 }
 
-.menuCheckbox {
-  opacity: 0;
-  pointer-events: none;
-  height: 0;
-  position: fixed;
-}
-
 .menuMobile {
   display: flex;
   position: fixed;
@@ -94,7 +87,7 @@
 
   transition: transform $transition;
 
-  .menuCheckbox:checked ~ & {
+  &.open {
     display: flex;
     justify-content: center;
     align-items: center;

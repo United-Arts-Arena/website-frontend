@@ -1,25 +1,49 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../../assets/logo.png";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 
 import styles from "./header.module.scss";
+import classNames from "classnames";
 
 export const Header: React.FC = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   const MenuEntries = (
     <>
-      <li>
+      <li
+        onClick={() => {
+          setMenuOpen(false);
+        }}
+      >
+        <Link className={styles.menuItem} to="/">
+          Home
+        </Link>
+      </li>
+      <li
+        onClick={() => {
+          setMenuOpen(false);
+        }}
+      >
         <Link className={styles.menuItem} to="faq">
           FAQ
         </Link>
       </li>
-      <li>
+      <li
+        onClick={() => {
+          setMenuOpen(false);
+        }}
+      >
         <Link className={styles.menuItem} to="artists">
           Artist Signup
         </Link>
       </li>
-      <li>
+      <li
+        onClick={() => {
+          setMenuOpen(false);
+        }}
+      >
         <Link className={styles.menuItem} to="partners">
           Partner Signup
         </Link>
@@ -39,19 +63,25 @@ export const Header: React.FC = () => {
           </div>
         </div>
       </header>
-      <label htmlFor="menuCheckbox" className={styles.mobileMenuOpen}>
+      <div
+        className={styles.mobileMenuOpen}
+        onClick={() => {
+          setMenuOpen(true);
+        }}
+      >
         <MenuIcon className={styles.icon} />
-      </label>
-      <input
-        className={styles.menuCheckbox}
-        type="checkbox"
-        name="menuCheckbox"
-        id="menuCheckbox"
-      />
-      <menu className={styles.menuMobile}>
-        <label htmlFor="menuCheckbox" className={styles.mobileMenuClose}>
+      </div>
+      <menu
+        className={classNames(styles.menuMobile, { [styles.open]: menuOpen })}
+      >
+        <div
+          className={styles.mobileMenuClose}
+          onClick={() => {
+            setMenuOpen(false);
+          }}
+        >
           <CloseIcon className={styles.icon} />
-        </label>
+        </div>
         {MenuEntries}
       </menu>
     </>
