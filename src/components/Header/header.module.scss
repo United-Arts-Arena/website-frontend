@@ -1,3 +1,4 @@
+@use "sass:math";
 @import "../../styles/constants.scss";
 @import "../../styles/mixins.scss";
 
@@ -60,15 +61,15 @@
 
 // Mobile Menu
 .icon {
-  width: $headerHeight / 2;
-  height: $headerHeight / 2;
+  width: math.div($headerHeight, 2);
+  height: math.div($headerHeight, 2);
 }
 
 .mobileMenuOpen {
   position: fixed;
   display: none;
-  top: $headerHeight / 4;
-  left: $headerHeight / 4;
+  top: math.div($headerHeight, 4);
+  left: math.div($headerHeight, 4);
   z-index: 200;
 
   @include mediaSm {
@@ -100,6 +101,6 @@
 
 .mobileMenuClose {
   position: absolute;
-  top: $headerHeight / 4;
-  right: $headerHeight / 4;
+  top: math.div($headerHeight, 4);
+  right: math.div($headerHeight, 4);
 }
