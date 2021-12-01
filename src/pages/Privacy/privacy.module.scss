@@ -1,0 +1,11 @@
+@import "../../styles/constants.scss";
+
+.privacy {
+  max-width: 1200px;
+  text-align: left;
+  margin: $base * 3 auto;
+
+  h2 {
+    margin-top: $base * 2;
+  }
+}

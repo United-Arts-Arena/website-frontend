@@ -7,6 +7,7 @@ import { PageFrame } from "./components/PageFrame/PageFrame";
 import { ArtistSignup } from "./pages/ArtistSignup/ArtistSignup";
 import { PartnerSignup } from "./pages/PartnerSignup/PartnerSignup";
 import { FAQ } from "./pages/FAQ/faq";
+import { Privacy } from "./pages/Privacy/privacy";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="impressum" element={<Impressum />} />
+            <Route path="privacy" element={<Privacy />} />
             <Route path="artists" element={<ArtistSignup />} />
             <Route path="partners" element={<PartnerSignup />} />
             <Route path="faq" element={<FAQ />} />
