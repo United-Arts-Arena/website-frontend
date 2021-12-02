@@ -1,0 +1,55 @@
+@import "../../styles/constants.scss";
+@import "../../styles/mixins.scss";
+
+body {
+  .contact {
+    text-align: left;
+    max-width: $maxContentWidth;
+    margin: 0 auto;
+
+    @include mediaSm {
+      padding: 0 $base * 2;
+    }
+  }
+
+  .headline {
+    margin-bottom: $base * 2;
+  }
+
+  .description {
+    margin-bottom: $base * 2;
+  }
+
+  .email {
+    display: inline-block;
+    margin-bottom: $base * 2;
+    padding: $base $base * 2;
+    background: #000;
+
+    a {
+      color: #fff;
+      text-decoration: none;
+      text-transform: uppercase;
+
+      transition: color $transition;
+
+      &:hover,
+      &:focus {
+        color: grey;
+      }
+    }
+  }
+
+  .item {
+    padding: 0 $base;
+    color: #fff;
+    text-decoration: none;
+
+    transition: color $transition;
+
+    &:hover,
+    &:focus {
+      color: $grey;
+    }
+  }
+}

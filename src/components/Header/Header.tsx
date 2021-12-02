@@ -35,6 +35,15 @@ export const Header: React.FC = () => {
           setMenuOpen(false);
         }}
       >
+        <Link className={styles.menuItem} to="contact">
+          Contact
+        </Link>
+      </li>
+      <li
+        onClick={() => {
+          setMenuOpen(false);
+        }}
+      >
         <Link className={styles.menuItem} to="newsletter">
           Newsletter Signup
         </Link>
