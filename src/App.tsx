@@ -12,7 +12,7 @@ import { Contact } from "./pages/Contact/Contact";
 function App() {
   return (
     <div>
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <PageFrame>
           <Routes>
             <Route path="/" element={<Home />} />
