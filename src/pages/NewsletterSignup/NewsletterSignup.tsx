@@ -13,7 +13,7 @@ export const NewsletterSignup: React.FC = () => (
       <iframe
         className={styles.iframe}
         title="guestoo_frame"
-        src="https://app.guestoo.de/public/event/4ec66dd8-b206-4358-8a03-638ead270c63/frame?hideCookieinfo=true&lang=de&scrollId=guestoo-registerForm"
+        src="https://app.guestoo.de/public/event/4ec66dd8-b206-4358-8a03-638ead270c63/frame?hideCookieinfo=true&lang=en&scrollId=guestoo-registerForm"
         id="guestooFrame"
       >
         {" "}
