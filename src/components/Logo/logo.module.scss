@@ -1,40 +1,42 @@
 @import "../../styles/constants.scss";
 @import "../../styles/mixins.scss";
 
-.logoWrapper {
-  position: relative;
-}
-
-.logo {
-  position: relative;
-  width: 25vw;
-  height: 25vw;
-  z-index: 1;
-
-  animation: push $animationTime ease-in infinite;
-
-  @include mediaSm {
-    width: 50vw;
-    height: 50vw;
+body {
+  .logoWrapper {
+    position: relative;
   }
-}
 
-.logoAlt {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  z-index: 0;
-  transform-origin: center;
+  .logo {
+    position: relative;
+    width: 25vw;
+    height: 25vw;
+    z-index: 1;
 
-  --pulseScale: 1.4;
+    animation: push $animationTime ease-in infinite;
 
-  animation: pulse $animationTime linear infinite;
-}
+    @include mediaSm {
+      width: 50vw;
+      height: 50vw;
+    }
+  }
 
-.logoAlt2 {
-  animation-delay: 0.3s;
-  --pulseScale: 1.6;
+  .logoAlt {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 0;
+    transform-origin: center;
+
+    --pulseScale: 1.4;
+
+    animation: pulse $animationTime linear infinite;
+  }
+
+  .logoAlt2 {
+    animation-delay: 0.3s;
+    --pulseScale: 1.6;
+  }
 }
 
 @keyframes push {

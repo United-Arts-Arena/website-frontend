@@ -2,105 +2,107 @@
 @import "../../styles/constants.scss";
 @import "../../styles/mixins.scss";
 
-.header {
-  position: fixed;
-  display: flex;
-  justify-content: center;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: $headerHeight;
-  background: #000;
-  z-index: 100;
-}
-
-.content {
-  width: 100%;
-  max-width: $maxContentWidth;
-}
-
-.menu,
-.menuMobile {
-  display: flex;
-  list-style: none;
-}
-
-.menu {
-  @include mediaSm {
-    display: none;
+body {
+  .header {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: $headerHeight;
+    background: #000;
+    z-index: 100;
   }
-}
 
-.menuItem {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: $headerHeight;
-  padding: 0 $base * 2;
-  color: white;
-  text-decoration: none;
-}
-
-.logoWrapper {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  right: $base * 4;
-  width: $headerHeight * 2;
-  height: $headerHeight * 2;
-  bottom: -$headerHeight;
-  background: black;
-  border-radius: 50%;
-}
-
-.logo {
-  width: 95%;
-  height: 95%;
-}
-
-// Mobile Menu
-.icon {
-  width: math.div($headerHeight, 2);
-  height: math.div($headerHeight, 2);
-}
-
-.mobileMenuOpen {
-  position: fixed;
-  display: none;
-  top: math.div($headerHeight, 4);
-  left: math.div($headerHeight, 4);
-  z-index: 200;
-
-  @include mediaSm {
-    display: block;
+  .content {
+    width: 100%;
+    max-width: $maxContentWidth;
   }
-}
 
-.menuMobile {
-  display: flex;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: #000;
-  z-index: 1000;
-  transform: translateX(-110%);
+  .menu,
+  .menuMobile {
+    display: flex;
+    list-style: none;
+  }
 
-  transition: transform $transition;
+  .menu {
+    @include mediaSm {
+      display: none;
+    }
+  }
 
-  &.open {
+  .menuItem {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    transform: translateX(0);
+    height: $headerHeight;
+    padding: 0 $base * 2;
+    color: white;
+    text-decoration: none;
   }
-}
 
-.mobileMenuClose {
-  position: absolute;
-  top: math.div($headerHeight, 4);
-  right: math.div($headerHeight, 4);
+  .logoWrapper {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: $base * 4;
+    width: $headerHeight * 2;
+    height: $headerHeight * 2;
+    bottom: -$headerHeight;
+    background: black;
+    border-radius: 50%;
+  }
+
+  .logo {
+    width: 95%;
+    height: 95%;
+  }
+
+  // Mobile Menu
+  .icon {
+    width: math.div($headerHeight, 2);
+    height: math.div($headerHeight, 2);
+  }
+
+  .mobileMenuOpen {
+    position: fixed;
+    display: none;
+    top: math.div($headerHeight, 4);
+    left: math.div($headerHeight, 4);
+    z-index: 200;
+
+    @include mediaSm {
+      display: block;
+    }
+  }
+
+  .menuMobile {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+    z-index: 1000;
+    transform: translateX(-110%);
+
+    transition: transform $transition;
+
+    &.open {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      transform: translateX(0);
+    }
+  }
+
+  .mobileMenuClose {
+    position: absolute;
+    top: math.div($headerHeight, 4);
+    right: math.div($headerHeight, 4);
+  }
 }
