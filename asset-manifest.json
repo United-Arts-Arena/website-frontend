@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/unitedartsarena.com/static/css/main.53145d84.chunk.css",
-    "main.js": "/unitedartsarena.com/static/js/main.2de9ff0d.chunk.js",
-    "main.js.map": "/unitedartsarena.com/static/js/main.2de9ff0d.chunk.js.map",
-    "runtime-main.js": "/unitedartsarena.com/static/js/runtime-main.f1b2d311.js",
-    "runtime-main.js.map": "/unitedartsarena.com/static/js/runtime-main.f1b2d311.js.map",
-    "static/js/2.cb4300e3.chunk.js": "/unitedartsarena.com/static/js/2.cb4300e3.chunk.js",
-    "static/js/2.cb4300e3.chunk.js.map": "/unitedartsarena.com/static/js/2.cb4300e3.chunk.js.map",
-    "static/js/3.4e8ca1b5.chunk.js": "/unitedartsarena.com/static/js/3.4e8ca1b5.chunk.js",
-    "static/js/3.4e8ca1b5.chunk.js.map": "/unitedartsarena.com/static/js/3.4e8ca1b5.chunk.js.map",
-    "index.html": "/unitedartsarena.com/index.html",
-    "static/css/main.53145d84.chunk.css.map": "/unitedartsarena.com/static/css/main.53145d84.chunk.css.map",
-    "static/js/2.cb4300e3.chunk.js.LICENSE.txt": "/unitedartsarena.com/static/js/2.cb4300e3.chunk.js.LICENSE.txt",
-    "static/media/logo.ceeff95c.png": "/unitedartsarena.com/static/media/logo.ceeff95c.png",
-    "static/media/index.css": "/unitedartsarena.com/static/media/outage.99316c3d.woff2"
+    "main.css": "/static/css/main.27754045.chunk.css",
+    "main.js": "/static/js/main.2de9ff0d.chunk.js",
+    "main.js.map": "/static/js/main.2de9ff0d.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.a5483f14.js",
+    "runtime-main.js.map": "/static/js/runtime-main.a5483f14.js.map",
+    "static/js/2.cb4300e3.chunk.js": "/static/js/2.cb4300e3.chunk.js",
+    "static/js/2.cb4300e3.chunk.js.map": "/static/js/2.cb4300e3.chunk.js.map",
+    "static/js/3.4e8ca1b5.chunk.js": "/static/js/3.4e8ca1b5.chunk.js",
+    "static/js/3.4e8ca1b5.chunk.js.map": "/static/js/3.4e8ca1b5.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.27754045.chunk.css.map": "/static/css/main.27754045.chunk.css.map",
+    "static/js/2.cb4300e3.chunk.js.LICENSE.txt": "/static/js/2.cb4300e3.chunk.js.LICENSE.txt",
+    "static/media/logo.ceeff95c.png": "/static/media/logo.ceeff95c.png",
+    "static/media/index.css": "/static/media/outage.99316c3d.woff2"
   },
   "entrypoints": [
-    "static/js/runtime-main.f1b2d311.js",
+    "static/js/runtime-main.a5483f14.js",
     "static/js/2.cb4300e3.chunk.js",
-    "static/css/main.53145d84.chunk.css",
+    "static/css/main.27754045.chunk.css",
     "static/js/main.2de9ff0d.chunk.js"
   ]
 }
